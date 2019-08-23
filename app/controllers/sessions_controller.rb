@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     #  log_in user
       redirect_to '/'
     else
-      redirect_to 'login'
+      redirect_to '/login'
     end
   end
 
