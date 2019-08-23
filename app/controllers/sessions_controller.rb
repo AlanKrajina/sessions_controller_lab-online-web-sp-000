@@ -8,8 +8,7 @@ class SessionsController < ApplicationController
     if session[:name] != nil && session[:name] != ""
     #  log_in user
       redirect_to '/'
-    elsif  session[:name] == nil && session[:name] == ""
-
+    else
       render 'new'
     end
   end
