@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     #  log_in user
       redirect_to '/'
     else
-      render 'sessions/new'
+      redirect_to 'new'
     end
   end
 
