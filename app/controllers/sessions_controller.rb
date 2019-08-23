@@ -4,8 +4,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(name: params[:session][:name])
-    if user && params[:name] != "" #user.authenticate(params[:session][:name])
+  #  user = User.find_by(name: params[:session][:name])
+    if params[:name] != nil && params[:name] != "" #user.authenticate(params[:session][:name])
     #  log_in user
       redirect_to '/'
     else
